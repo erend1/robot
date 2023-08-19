@@ -85,8 +85,8 @@ class Robot:
         common_direction = default_direction
         self.velocity = velocity[common_direction]
         other_robot.velocity = velocity[common_direction]
-        count = 0
 
+        count = 0
         parachute_found_by = None
         parachute_found_at = None
         while self.velocity == other_robot.velocity and count < max_count:
